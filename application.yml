@@ -1,10 +1,11 @@
 spring:
   application:
-    name: config-default
+    name: yourname
 
 eureka:
   instance:
     prefer-ip-address: true
+  instanceId: ${spring.application.name}
   client:
     fetch-registry: true
     register-with-eureka: true
